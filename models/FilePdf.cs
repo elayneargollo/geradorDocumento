@@ -3,10 +3,13 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
 
-public class FilePdf : FileSecurity, IFileTool
+public class FilePdf : File
 {
-    public void WriteFile(string path, string filename)
+    public override void WriteFile(string path, string filename)
     {
+        if(String.IsNullOrEmpty(path) || String.IsNullOrEmpty(filename))
+            throw new ArgumentException("Value cannot be null or empty");
+
         Document doc = new Document(PageSize.A4);
         doc.SetMargins(40, 40, 40, 80);
         doc.AddCreationDate();
@@ -27,7 +30,7 @@ public class FilePdf : FileSecurity, IFileTool
         doc.Close();
     }
 
-    public void OpenFile(string path, string filename)
+    public override void OpenFile(string path, string filename)
     {
         StringBuilder text = new StringBuilder();
         PdfReader pdfReader = new PdfReader(String.Concat(path, filename));

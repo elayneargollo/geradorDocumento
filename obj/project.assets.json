@@ -3885,11 +3885,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Elayne\\Desktop\\arquivoPdf\\arquivoPdf.csproj",
+      "projectUniqueName": "C:\\Users\\Elayne\\Desktop\\GeradorDocumento\\arquivoPdf.csproj",
       "projectName": "arquivoPdf",
-      "projectPath": "C:\\Users\\Elayne\\Desktop\\arquivoPdf\\arquivoPdf.csproj",
+      "projectPath": "C:\\Users\\Elayne\\Desktop\\GeradorDocumento\\arquivoPdf.csproj",
       "packagesPath": "C:\\Users\\Elayne\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Elayne\\Desktop\\arquivoPdf\\obj\\",
+      "outputPath": "C:\\Users\\Elayne\\Desktop\\GeradorDocumento\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
